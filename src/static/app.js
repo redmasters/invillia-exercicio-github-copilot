@@ -89,14 +89,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Toggle dark mode
-  darkModeToggle.addEventListener("click", () => {
+  // Function to toggle dark mode
+  function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
     document.querySelectorAll("header, section, .activity-card").forEach((el) => {
       el.classList.toggle("dark-mode");
     });
-  });
+  }
 
+  // Toggle dark mode
+  darkModeToggle.addEventListener("click", toggleDarkMode);
   // Initialize app
   fetchActivities();
 });
