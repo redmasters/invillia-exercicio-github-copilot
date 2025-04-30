@@ -91,6 +91,31 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+  font-size: 15px;
+  color: #444;
+}
+
+/* Style for the participant list */
+.activity-card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #555;
+}
+
+.activity-card ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Dark mode styles for participant list */
+.activity-card.dark-mode ul {
+  color: #ccc;
+}
+
+.activity-card.dark-mode ul li {
+  color: #e0e0e0;
 }
 
 .form-group {
